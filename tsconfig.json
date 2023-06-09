@@ -22,18 +22,12 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@app/*": ["src/*"]
+      "@app/*": ["src/*"],
+      "@lib/*": ["src/common/*"]
     },
-    "lib": [
-      "es6"
-    ],
+    "lib": ["esnext", "ESNext.AsyncIterable"],
     "moduleSuffixes": [""]
   },
   "exclude": ["node_modules"],
-  "include": [
-    "*.js",
-    "*.ts",
-    "*.json",
-    "./src/**/*",
-  ]
+  "include": ["*.js", "*.ts", "*.json", "./src/**/*"]
 }
